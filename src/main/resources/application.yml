@@ -3,3 +3,12 @@ guru:
     username: Lydie
     password: jmspassword
     url: jmsurl
+
+---
+spring:
+  config:
+    activate:
+      on-profile: es
+guru:
+  jms:
+    username: Nicole
