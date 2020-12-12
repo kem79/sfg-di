@@ -16,8 +16,9 @@ public class SfgDiApplication {
 		MyController myController = (MyController)ctx.getBean("myController");
 
 		System.out.println("----- Config Properties");
-		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+		FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 		System.out.println(fakeDataSource.getUsername());
+		System.out.println(fakeDataSource.getPassword());
 
 //		System.out.println("----- Profile");
 //		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
